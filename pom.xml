@@ -47,6 +47,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- 若想让springmvc返回xml格式的响应，则添加这个包 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.8.10</version>
+        </dependency>
         <!-- 简化文件操作 -->
         <dependency>
             <groupId>commons-io</groupId>

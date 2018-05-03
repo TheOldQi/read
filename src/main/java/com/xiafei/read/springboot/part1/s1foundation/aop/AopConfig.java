@@ -16,7 +16,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @since java 1.8.0
  */
 @Configuration
-@ComponentScan("com.xiafei.read.springboot.book.part1.s1foundation.aop")
+@ComponentScan("com.xiafei.read.springboot.part1.s1foundation.aop")
 @EnableAspectJAutoProxy
 public class AopConfig {
 }
