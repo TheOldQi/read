@@ -1,4 +1,4 @@
-package com.xiafei.read.springboot.part2.s4foundation;
+package com.xiafei.read.springboot.part2.s4mvc;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.xiafei.read.springboot.part2.s4foundation;
+package com.xiafei.read.springboot.part2.s4mvc;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -19,12 +19,30 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class DemoInterceptor extends HandlerInterceptorAdapter {
 
+    /**
+     * mvc控制器被调用之前
+     *
+     * @param request
+     * @param response
+     * @param handler
+     * @return
+     * @throws Exception
+     */
     @Override
     public boolean preHandle(final HttpServletRequest request, final HttpServletResponse response, final Object handler) throws Exception {
         request.setAttribute("startTime", System.currentTimeMillis());
         return true;
     }
 
+    /**
+     * 成功执行之后，若发生异常不进入这里.
+     *
+     * @param request
+     * @param response
+     * @param handler
+     * @param modelAndView
+     * @throws Exception
+     */
     @Override
     public void postHandle(final HttpServletRequest request, final HttpServletResponse response, final Object handler, final ModelAndView modelAndView) throws Exception {
         long startTime = (long) request.getAttribute("startTime");

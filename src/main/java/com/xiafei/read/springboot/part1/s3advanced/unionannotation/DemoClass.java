@@ -11,7 +11,7 @@ package com.xiafei.read.springboot.part1.s3advanced.unionannotation;
  * @version 1.0
  * @since java 1.8.0
  */
-@WiselyConfiguration("111")
+@WiselyConfiguration(beanName = "111")
 public class DemoClass {
 
     public void output() {

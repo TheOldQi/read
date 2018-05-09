@@ -14,6 +14,5 @@ import com.xiafei.read.springboot.part1.s3advanced.unionannotation.WiselyConfigu
  * @since java 1.8.0
  */
 @WiselyConfiguration(basePackages = {"com.xiafei.read.springboot.part1.s3advanced.unionannotation"})
-//@ComponentScan(value = "com.xiafei.read.springboot.part1.s3advanced.unionannotation")
 public class UnionAnnoConfig {
 }

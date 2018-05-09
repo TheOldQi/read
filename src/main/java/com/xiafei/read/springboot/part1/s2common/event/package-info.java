@@ -1,11 +1,11 @@
 /**
  * <P>Description: spring事件.
  * Spring的事件需要遵循如下流程：
- *
+ * <p>
  * （1）自定义事件，集成ApplicationEvent。
- *
+ * <p>
  * （2）定义事件监听器，实现ApplicationListener。
- *
+ * <p>
  * （3）使用容器发布事件。</P>
  * <P>CALLED BY:   齐霞飞 </P>
  * <P>UPDATE BY:   齐霞飞 </P>

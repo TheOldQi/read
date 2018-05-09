@@ -1,4 +1,4 @@
-package com.xiafei.read.springboot.part2.s4foundation;
+package com.xiafei.read.springboot.part2.s4mvc;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,7 +19,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DemoObj {
-
 
 
     private Long id;

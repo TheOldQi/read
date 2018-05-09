@@ -2,6 +2,7 @@ package com.xiafei.read.springboot.part1.s3advanced.unionannotation;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.AliasFor;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -27,8 +28,16 @@ import java.lang.annotation.Target;
 @Configuration
 public @interface WiselyConfiguration {
 
-    String[] basePackages() default {};
+    @AliasFor(
+            annotation = Configuration.class,
+            value = "value"
+    )
+    String beanName() default "";
 
-    String value() default "";
+    @AliasFor(
+            annotation = ComponentScan.class,
+            value = "basePackages"
+    )
+    String[] basePackages() default {};
 
 }

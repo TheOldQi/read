@@ -18,7 +18,7 @@ public class DemoBean {
 
     private String content;
 
-    public DemoBean(final String content){
+    public DemoBean(final String content) {
         super();
         this.content = content;
     }

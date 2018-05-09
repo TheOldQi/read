@@ -1,4 +1,4 @@
-package com.xiafei.read.springboot.part2.s4foundation;
+package com.xiafei.read.springboot.part2.s4mvc.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -28,6 +28,7 @@ public class WebInitializer implements WebApplicationInitializer {
         final ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(context));
         dispatcher.addMapping("/");
         dispatcher.setLoadOnStartup(1);
+        dispatcher.setAsyncSupported(true); // 开启异步方式支持
 
     }
 }
