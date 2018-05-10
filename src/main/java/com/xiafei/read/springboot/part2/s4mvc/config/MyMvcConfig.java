@@ -53,8 +53,8 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.
-                addResourceHandler("/js/**"). // 对外暴露路径
-                addResourceLocations("classpath:/static/js/"); // 绑定的文件地址
+                addResourceHandler("/jquery/**"). // 对外暴露路径
+                addResourceLocations("classpath:/static/jquery/"); // 绑定的文件地址
 
     }
 
